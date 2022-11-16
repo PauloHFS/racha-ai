@@ -1,0 +1,19 @@
+{
+  "name": "racha-ai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PauloHFS/racha-ai.git",
+  "author": "Paulo Hernane <paulo@mobixtec.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "start:api": "yarn workspace @racha-ai/server start",
+    "dev:api": "yarn workspace @racha-ai/server dev",
+    "generate": "yarn workspace @racha-ai/server generate"
+  }
+}
